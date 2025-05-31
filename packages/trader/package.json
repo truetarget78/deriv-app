@@ -9,7 +9,7 @@
         "analyze:build": "webpack-bundle-analyzer --no-open -m static -r treemap.html stats.json ./dist && webpack-bundle-analyzer -m json stats.json ./dist",
         "start": "npm run test && npm run serve",
         "serve": "echo \"Serving...\" && NODE_OPTIONS='-r ts-node/register' webpack --progress --watch --config \"./build/webpack.config.js\"",
-        "build": "cross-env NODE_OPTIONS=-r ts-node/register webpack --config ./build/webpack.config.js"
+        "build": "cross-env NODE_OPTIONS=-r ts-node/register webpack --config ./build/webpack.config.js",
         "build:travis": "echo \"No build:travis specified\"",
         "test:eslint": "eslint \"./src/**/*.?(js|jsx|ts|tsx)\"",
         "deploy": "echo \"No deploy specified\"",
@@ -49,7 +49,7 @@
         "circular-dependency-plugin": "^5.2.2",
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "^12.0.2",
-        "cross-env": "^7.0.3"
+        "cross-env": "^7.0.3",
         "css-loader": "^5.0.1",
         "css-minimizer-webpack-plugin": "^3.0.1",
         "eslint-config-airbnb-base": "^15.0.0",
